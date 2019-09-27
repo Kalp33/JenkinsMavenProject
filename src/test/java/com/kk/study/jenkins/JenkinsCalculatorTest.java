@@ -19,5 +19,11 @@ public class JenkinsCalculatorTest {
 		calc = new JenkinsCalculator();
 		assertEquals(15, calc.substract(20, 5));
 	}
+	
+	@Test
+	public void multiplyTest(){
+		calc = new JenkinsCalculator();
+		assertEquals(100, calc.multiply(20, 5));
+	}
 
 }
