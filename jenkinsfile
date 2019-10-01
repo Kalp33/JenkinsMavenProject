@@ -23,5 +23,10 @@ pipeline {
                 archiveArtifacts 'target/*.jar'
             }
         }
+        stage('Email Build Status') {
+            steps {
+                mail bcc: '', body: 'sample', cc: '', from: '', replyTo: '', subject: 'sample', to: 'KalpeshStudy123@gmail.com'
+            }
+        }
     }
 }
